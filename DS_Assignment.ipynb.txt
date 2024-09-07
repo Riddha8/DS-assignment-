@@ -1,0 +1,310 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "O3h7618VMkxW"
+      },
+      "outputs": [],
+      "source": [
+        "# prompt: Discuss string slicing and provide examples\n",
+        "\n",
+        "# String slicing allows you to extract a portion of a string.\n",
+        "# The basic syntax is string[start:end:step]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ec1VQ7mvOpQx",
+        "outputId": "15cff814-357f-49ae-bb4e-9331c3e85904"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "hello\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "text = \"hello world\"\n",
+        "substring = text[0:5]\n",
+        "print(substring)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Si9tWyZRO7wd",
+        "outputId": "18a270f9-5b84-46db-9f87-42cfb07cc221"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "hlowr\n"
+          ]
+        }
+      ],
+      "source": [
+        "substring1 = text[0:10:2]\n",
+        "print (substring1)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7-agDDkSUWBg"
+      },
+      "source": [
+        "Explain the key features of lists in Python"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "jyddjgnabMaf"
+      },
+      "outputs": [],
+      "source": [
+        "# In Python, lists are versatile and commonly used data structures. Here are some key features of lists:\n",
+        "\n",
+        "# Ordered: Lists maintain the order of elements as they are added. Each element has a specific position, or index, starting from 0.\n",
+        "\n",
+        "#Mutable: Lists can be modified after creation. You can change, add, or remove elements.\n",
+        "\n",
+        "#Dynamic Size: Lists can grow or shrink in size as needed. You can add or remove items dynamically.\n",
+        "\n",
+        "#Heterogeneous Elements: A list can contain elements of different types. For example, it can store integers, strings, and other objects together.\n",
+        "\n",
+        "#Indexing and Slicing: Elements in a list can be accessed using indices, and you can use slicing to access a subset of the list."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Z2T8EKpVbLuN"
+      },
+      "source": [
+        "Describe how to access, modify, and delete elements in a list with examples\u0014\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5gGt-XLCbzus",
+        "outputId": "9a591c6c-f6d7-4fee-fcf4-1f4e851bf416"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Accessing Elements\n",
+        "\n",
+        "list= [10, 20, 30, 40, 50]\n",
+        "first_element = list [0]\n",
+        "print (first_element)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZTgOoYGadJkl",
+        "outputId": "d18d7823-9ba7-4cd4-869a-496562f20ce7"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[10, 25, 30, 40, 50]\n"
+          ]
+        }
+      ],
+      "source": [
+        " # Modifying Elements\n",
+        "\n",
+        " list[1] = 25\n",
+        " print (list)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "spUBW5eMdxUb",
+        "outputId": "0fea9675-d1a1-42b6-e0f6-cc331f3095a8"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[10, 25, 30, 50]\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Deleting Elements\n",
+        "\n",
+        "list.remove(40)\n",
+        "print (list)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "m7U-90eEeZSW"
+      },
+      "source": [
+        "Compare and contrast tuples and lists with examples"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4fDDmAjYefGb",
+        "outputId": "ec796b49-682c-4e4d-eac2-ed42aaf6c542"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "+--------------------------------------------+----------------------+\n",
+            "| list                                       | tuples               |\n",
+            "+============================================+======================+\n",
+            "| mutable                                    | immutable            |\n",
+            "+--------------------------------------------+----------------------+\n",
+            "| syntax[]                                   | syntax()             |\n",
+            "+--------------------------------------------+----------------------+\n",
+            "| Used for items that might change over time | Used for fixed items |\n",
+            "+--------------------------------------------+----------------------+\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Tuples and lists are both sequence types in Python, but they have distinct characteristics and us\n",
+        "from tabulate import tabulate\n",
+        "\n",
+        "headers = [\"list\", \"tuples\"]\n",
+        "data = [\n",
+        "    [\"mutable\", \"immutable \"],\n",
+        "        [\"syntax[]\", \"syntax()\"],\n",
+        "            [\"Used for items that might change over time\", \"Used for fixed items\"]\n",
+        "            ]\n",
+        "\n",
+        "table = tabulate(data, headers, tablefmt=\"grid\")\n",
+        "print(table)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZoAPNLhbm-h9"
+      },
+      "source": [
+        "Describe the key features of sets and provide examples of their use\u0014\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MiSuFcqZnEHt",
+        "outputId": "c0478f73-12c6-4302-d8d6-1635bdfa09fd"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "{1, 2, 3}\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Uniqueness\n",
+        "s = {1, 2, 2, 3}\n",
+        "print(s)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true
+        },
+        "id": "z2jW5GxQp6Vb",
+        "outputId": "992588b9-4ac6-4971-fd81-7c617002021b"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "{1, 2, 3}\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Unordered\n",
+        " = {3, 1, 2}\n",
+        "print(s)"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
